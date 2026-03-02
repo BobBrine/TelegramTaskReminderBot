@@ -2,6 +2,11 @@
 
 Telegram personal assistant bot with a single dashboard message, notes + reminders, edit panels, and Ollama-assisted NOTE/REMINDER classification.
 
+## Screenshots
+
+![Dashboard Example 1](screenshots/example_1.png)
+![Dashboard Example 2](screenshots/example_2.png)
+
 ## What it does
 
 - Keeps one dashboard message per user (stored in `user_main_message`)
@@ -99,6 +104,25 @@ python bot.py
 - `/cancel` cancel current capture flow
 - `/note` manual note capture flow
 - `/notes` show recent notes text card
+
+## Upcoming update (planned)
+
+I am preparing a bigger AI conversation update so the bot can understand normal, multi-sentence chat and respond naturally before creating items.
+
+Planned behavior:
+
+- User can send normal messages, not only command-like text
+- AI will understand context, emotions, and intent from one message
+- AI will suggest extracted items (for example: `1 reminder task + 1 note`) and ask for user confirmation before saving
+- Bot will reply conversationally, then present a simple confirmation step
+
+Example target flow:
+
+- User: "yesterday my mom just pack me food but I forgot to thanks her, I feel bad, I want to thanks her next time, and also note that my teacher don't like fish"
+- Bot (planned): empathetic short reply + proposed extraction:
+  - Reminder task: "Thank mom next time"
+  - Note: "Teacher doesn't like fish"
+- Bot asks for confirmation (yes/no) before creating both items
 
 ## Project structure
 
